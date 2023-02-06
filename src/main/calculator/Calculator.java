@@ -129,7 +129,7 @@ public class Calculator
      */
     private boolean isLowerPrecedence(char a, char b)
     {
-        return (a == '/'|| a == '-') && (b == '-' || b == '*');
+        return (a == '/'|| a == '+') && (b == '-' || b == '*');
     }
 
     /**
@@ -139,7 +139,7 @@ public class Calculator
      */
     private boolean isOperator(char c)
     {
-        return c == '+' || c == '-' || c == '/' || c == '*';
+        return c == '+' || c == '/' || c == '-' || c == '*';
     }
 
     /**
