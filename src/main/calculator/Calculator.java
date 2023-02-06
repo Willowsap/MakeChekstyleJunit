@@ -54,8 +54,7 @@ public class Calculator
                 String next = input.findInLine(CHARACTER);
                 char symbol = next.charAt(0);
                 // for a left parentheses
-                if (symbol == '(')
-                {
+                if (symbol == '(') {
                     s.push(next);
                 }
                 // for an operator
@@ -130,7 +129,7 @@ public class Calculator
      */
     private boolean isLowerPrecedence(char a, char b)
     {
-        return (a == '+' || a == '-') && (b == '/' || b == '*');
+        return (a == '/'|| a == '-') && (b == '-' || b == '*');
     }
 
     /**
