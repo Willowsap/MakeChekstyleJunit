@@ -6,7 +6,6 @@ import java.util.regex.Pattern;
 
 /**
  * A simple calculator.
- *
  * @author Willow Sapphire
  * @version 03/29/2020
  *
